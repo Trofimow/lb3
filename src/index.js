@@ -162,10 +162,12 @@ function upperProps(obj) {
 function slice(array, from, to) {
 }
 
-
-
-
-
+function perevorot(v){
+    for (var k, j = 0, J = v.length, L = parseInt (J / 2); j < L; j++)
+        k = v [j];
+        v [j] = v [J - 1 - j];
+        v [J - 1 - j] = k;
+}
 
 
 
